@@ -16,7 +16,11 @@ Scalennger is a simple messanger build in Scala.
         - top: getFriends
         - id uzytkownika
 - zaloguj:
-        - typ: wyslij swoj ogin i haslo
-        - login
-        - haslo
-        - -is zarejestruj
+        - type: sendLoginData
+        - login:
+        - password:
+- zarejestruj:
+        - type: register
+        - login:
+        - password: 
+        - email:
