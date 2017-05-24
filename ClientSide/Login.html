@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login in</title>
+    <title>Scallenger - log in!</title>
     <link rel="stylesheet" type="text/css" href="css/Login.css">
 </head>
 
-<script src="js/Login.js"></script>
-
 <body>
-    <form name="loginData" action="#" onsubmit="return validateFormOnSubmit(this);">
+    <form name="loginData" action="/login_req_" method="post">
         <div class="imgcontainer">
             <img src="Images/logo.png" alt="Avatar" class="avatar">
         </div>
@@ -28,11 +26,16 @@
             <button type="button" class="cancelbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
-
-        <div class="container">
-            You are still not a part of a community? Register in 5 seconds!<br>
-            <button type="button" id="register">Register</button>
-        </div>
     </form>
+
+    <div class="container">
+        You are still not a part of a community? Register in 5 seconds!<br>
+        <form action="Register.html">
+            <input type="submit" value="Register"/>
+        </form>
+    </div>
 </body>
+
+<script src="js/Login.js"></script>
+
 </html>

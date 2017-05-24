@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scallenger - register!</title>
+    <link rel="stylesheet" type="text/css" href="css/Register.css">
+</head>
+
+<script src="js/Register.js"></script>
+
+<body>
+<form name="registerData" action="/register_req" method="post">
+    <div class="imgcontainer">
+        <img src="Images/logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label><b>email</b></label>
+        <input type="text" placeholder="Enter email" name="email" required>
+
+        <input type="radio" name="gender" value="male" checked>Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+
+        <button type="submit" id="registerbutt">Register</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+
+    </div>
+</form>
+</body>
+</html>
